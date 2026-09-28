@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manish | Developer & Tech Enthusiast</title>
+    <title>Manish Chaudhari | Developer & Tech Enthusiast</title>
     <!-- Google Font & FontAwesome Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -430,13 +430,27 @@
 
         .social-links a {
             color: var(--text-muted);
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.3s, transform 0.2s;
         }
 
         .social-links a:hover {
             color: var(--accent-blue);
+            transform: translateY(-3px);
+        }
+
+        /* Footer Style */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer strong {
+            color: var(--text-color);
         }
 
         /* Responsive Design */
@@ -653,15 +667,29 @@
             <div class="section-label" style="text-align: center;">Let's Connect</div>
             <h2>Have an idea? Let's build it.</h2>
             <p>I'm always interested in learning, collaborating, and working on interesting projects.</p>
-            <a href="mailto:manish@example.com" class="btn btn-primary">Say Hello</a>
+            
+            <!-- Mailto Button -->
+            <a href="mailto:manishchaudhari.workspace@gmail.com" class="btn btn-primary">Say Hello</a>
+            
+            <!-- Social Icons -->
             <div class="social-links">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/manishchaudhari-stack" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/manish-chaudhari-30852a426/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:manishchaudhari.workspace@gmail.com" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
             </div>
         </div>
     </section>
+
+    <!-- Footer at Very End -->
+    <footer>
+        <p>&copy; 2026 <strong>Manish Chaudhari</strong>. All rights reserved.</p>
+    </footer>
 
     <!-- JavaScript -->
     <script>
@@ -694,5 +722,6 @@
 
         skillBars.forEach(bar => observer.observe(bar));
     </script>
+  
 </body>
 </html>
